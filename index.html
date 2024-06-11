@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather API</title>
+    <link rel="shortcut icon" href="images/reshot-icon-weather-EJPNZMV8U5.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <section class="min-vh-100 bg-info">
+      <div class="container py-5">
+        <div class="d-flex g-0 position-relative">
+          <input
+            class="form-control p-2"
+            type="text"
+            id="input"
+            placeholder="Enter The city name"
+          />
+          <button id="btn" class="btn btn-warning text-white px-4">
+            <i id="spin" class="fa-solid fa-spinner  me-2"></i>Search
+          </button>
+        </div>
+        
+        <div class="row text-center mt-5 g-4 px-md-5" id="rowData"></div>
+      </div>
+    </section>
+    <div class="loading d-none">
+      <span class="loader"></span>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
