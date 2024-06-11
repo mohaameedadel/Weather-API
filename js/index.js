@@ -2,6 +2,10 @@ const input = document.getElementById("input");
 const btn = document.getElementById("btn");
 const loading = document.querySelector(".loading");
 const spin = document.getElementById("spin")
+
+getData("cairo");
+
+
 if (navigator.geolocation) {
   navigator.geolocation.getCurrentPosition((position) => {
     let latitude = position.coords.latitude;
@@ -10,9 +14,10 @@ if (navigator.geolocation) {
     let q = `${latitude},${longitude}`;
     getData(q);
   });
-} else {
-  getData("cairo");
 }
+
+
+
 
 btn.addEventListener("click", function () {
 
